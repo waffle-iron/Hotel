@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/irish/Hotel.png?label=ready&title=Ready)](https://waffle.io/irish/Hotel)
 # hotel
 
 [![N|Solid](http://images.grault.com/hotel/branding/logo.png)](https://github.com/irish/hotel)
