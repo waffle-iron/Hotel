@@ -4,5 +4,8 @@
 }
 #site-header-menu a{
 	border-bottom: 			none;
+}
 
+.menu-toggle:hover, .menu-toggle:focus{
+	border-color:_palette(activetheme, color1)
 }

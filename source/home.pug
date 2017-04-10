@@ -17,8 +17,9 @@ html(lang="en")
 		link(rel='stylesheet', href='style.css')
 	body.home.page-template-default.page.page-id-00.group-blog
 		div#page.site
-			include regions/_#header.pug
-			#content.site-content
-				include regions/_#content.pug
-				include regions/_#sidebar.pug
-			include regions/_#footer.pug
+			.site-inner
+				include regions/_#header.pug
+				#content.site-content
+					include regions/_#content.pug
+					include regions/_#sidebar.pug
+				include regions/_#footer.pug

@@ -168,7 +168,7 @@ $palette:(
 	secondary-text-color:					#757575, //Contrasting Text Color
 	divider-color:							#BDBDBD, //Bridge Color
 	
-	activetheme: (	
+	twentysixteen: (	
 		color-a:							rgba(026, 026, 026, 1.00),	//Background Color
 		color-z:							rgba(255, 255, 255, 1.00),	//Page Background Color
 		color1:								rgba(000, 122, 204, 1.00),	//Link Color
@@ -176,6 +176,24 @@ $palette:(
 		color3:								rgba(104, 104, 104, 1.00),	//Secondary Text Color
 		color4:								rgba(255, 050, 011, 1.00)	//Border Color
 	),//twentysixteen
+
+	twentysixteen-dark: (	
+		color-a:							#262626,	//Background Color
+		color-z:							#1a1a1a,	//Page Background Color
+		color1:								#9adffd,	//Link Color
+		color2:								#e5e5e5,	//Main Text Color
+		color3:								#c1c1c1,	//Secondary Text Color
+		color4:								rgba(255, 050, 011, 1.00)	//Border Color
+	),//twentysixteen-dark
+
+	activetheme: (	
+		color-a:							#616a73,	//Background Color
+		color-z:							#4d545c,	//Page Background Color
+		color1:								#c7c7c7,	//Link Color
+		color2:								#f2f2f2,	//Main Text Color
+		color3:								#f2f2f2,	//Secondary Text Color
+		color4:								rgba(255, 050, 011, 1.00)	//Border Color
+	),//twentysixteen-gray
 
 	carlsbad: (	
 		color-a:							rgba(255, 255, 255, 1.00),	//Page Color

@@ -1,3 +1,76 @@
+/* Link Color */
+.menu-toggle:hover,
+.menu-toggle:focus,
+a,
+.main-navigation a:hover,
+.main-navigation a:focus,
+.dropdown-toggle:hover,
+.dropdown-toggle:focus,
+.social-navigation a:hover:before,
+.social-navigation a:focus:before,
+.post-navigation a:hover .post-title,
+.post-navigation a:focus .post-title,
+.tagcloud a:hover,
+.tagcloud a:focus,
+.site-branding .site-title a:hover,
+.site-branding .site-title a:focus,
+.entry-title a:hover,
+.entry-title a:focus,
+.entry-footer a:hover,
+.entry-footer a:focus,
+.comment-metadata a:hover,
+.comment-metadata a:focus,
+.pingback .comment-edit-link:hover,
+.pingback .comment-edit-link:focus,
+.comment-reply-link,
+.comment-reply-link:hover,
+.comment-reply-link:focus,
+.required,
+.site-info a:hover,
+.site-info a:focus {
+	color: _palette(activetheme,color1);
+}
+
+mark,
+ins,
+button:hover,
+button:focus,
+input[type="button"]:hover,
+input[type="button"]:focus,
+input[type="reset"]:hover,
+input[type="reset"]:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.pagination .prev:hover,
+.pagination .prev:focus,
+.pagination .next:hover,
+.pagination .next:focus,
+.widget_calendar tbody a,
+.page-links a:hover,
+.page-links a:focus {
+	color: _palette(activetheme,color1);
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="week"]:focus,
+input[type="month"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+.tagcloud a:hover,
+.tagcloud a:focus,
+.menu-toggle:hover,
+.menu-toggle:focus {
+	color: _palette(activetheme,color1);
+}
+
 a{
 	color: 					_palette(activetheme,color1);
 	border-bottom: 			1px dashed _palette(activetheme,color1);
@@ -71,10 +144,6 @@ a.post-thumbnail:focus {
 .site-info a:hover{
 	box-shadow: 			none;
 }
-
-
-
-
 
 
 
