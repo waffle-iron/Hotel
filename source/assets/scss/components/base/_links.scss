@@ -1,0 +1,279 @@
+a{
+	color: 					_palette(activetheme,color1);
+	border-bottom: 			1px dashed _palette(activetheme,color1);
+	text-shadow: 			none;
+	text-decoration: 		none;
+	transition:.5s;
+	&:hover{
+		color: 				darken(_palette(activetheme,color1), 10%);
+		border-bottom: 		1px dashed darken(_palette(activetheme,color1), 10%);
+	}
+	&.unstyled{
+		text-decoration: 	none;
+		border-bottom: 		0px;
+	}
+}
+
+@include heading-links {
+	color: 					_palette(activetheme,color2);
+	text-decoration: 		none;
+	border-bottom: 			none;
+}
+
+.post-navigation a:hover .post-title,
+.post-navigation a:focus .post-title,
+.entry-footer a:hover,
+.entry-footer a:focus,
+a.post-thumbnail:hover,
+a.post-thumbnail:focus {
+	color: 					_palette(activetheme,color2);
+	border-bottom: 			1px solid _palette(activetheme,color2);
+}
+
+.comment-metadata a{
+	color: 					_palette(activetheme,color2);
+	border-bottom: 			1px dashed _palette(activetheme,color2);
+	&:hover{
+		color: 				_palette(activetheme,color2);
+		border-bottom: 		1px solid _palette(activetheme,color2);
+	}
+}
+
+.pagination a:hover,
+.pagination a:focus{
+	color: 					_palette(activetheme,color2);
+	border-bottom: 			1px solid _palette(activetheme,color2);
+}
+
+.nav-previous a,
+.nav-next a{
+	border-bottom: 			0px dashed _palette(activetheme,color2);
+}
+
+
+
+
+.site-branding .site-title a:hover,
+.site-branding .site-title a:focus{
+	color: 					_palette(activetheme,color2);
+	border-bottom: 			0px solid _palette(activetheme,color2);
+}
+
+
+.entry-content a, 
+.entry-summary a, 
+.taxonomy-description a, 
+.logged-in-as a, 
+.comment-content a, 
+.pingback .comment-body > a, 
+.textwidget a, 
+.entry-footer a:hover, 
+.site-info a:hover{
+	box-shadow: 			none;
+}
+
+
+
+
+
+
+
+/* Styled Links which require FontAwesome
+---------------------------------*/
+
+/* File Type Links.
+---------------------------------*/
+// TODO
+// a[target="_blank"]{
+// 	&:after{
+// 		font-family: "FontAwesome";
+// 		content: "\f08e";
+// 		margin-left: 4px;
+// 		position: relative;
+// 		font-size: 12px;
+// 	}
+// }
+
+a[href$=".pdf"]{
+	&:after{
+		font-family: 		"FontAwesome";
+		content: 			"\f1c1";
+		position: 			relative;
+		font-size: 			12px;
+		top: 				-1px;
+	}
+}
+
+a[href$=".doc"],
+a[href$=".docx"]{
+	&:after{
+		font-family: 		"FontAwesome";
+		content: 			"\f1c2";
+		margin-left: 		4px;
+		margin-right: 		1px;
+		position: 			relative;
+		font-size: 			12px;
+		top: 				-1px;
+	}
+}
+
+a[href$=".xls"],
+a[href$=".xlr"],
+a[href$=".xlsx"]{
+	&:after{
+		font-family:		"FontAwesome";
+		content:			"\f1c3";
+		margin-left: 		4px;
+		margin-right: 		1px;
+		position: 			relative;
+		font-size: 			12px;
+		top: 				-1px;
+	}
+}
+
+a[href$=".aif"],
+a[href$=".iff"],
+a[href$=".m3u"],
+a[href$=".m4a"],
+a[href$=".mid"],
+a[href$=".mp3"],
+a[href$=".mpa"],
+a[href$=".wav"],
+a[href$=".pcm"],
+a[href$=".wma"]{
+	&:after{
+		font-family: 		"FontAwesome";
+		content: 			"\f1c7";
+		margin-left: 		4px;
+		margin-right: 		1px;
+		position: 			relative;
+		font-size: 			12px;
+		top: 				-1px;
+	}
+}
+
+a[href$=".3g2"],
+a[href$=".3gp"],
+a[href$=".asf"],
+a[href$=".avi"],
+a[href$=".flv"],
+a[href$=".m4v"],
+a[href$=".mov"],
+a[href$=".mp4"],
+a[href$=".mpg"],
+a[href$=".rm"],
+a[href$=".srt"],
+a[href$=".swf"],
+a[href$=".vob"],
+a[href$=".wmv"]{
+	&:after{
+		font-family: 		"FontAwesome";
+		content: 			"\f1c8";
+		margin-left: 		4px;
+		margin-right: 		1px;
+		position: 			relative;
+		font-size: 			12px;
+		top: 				-1px;
+	}
+}
+
+// /* Brand Links
+// ---------------------------------*/
+
+a[href*="facebook"]{
+	&:hover{
+		color: 				_brand(facebook);
+		border-bottom: 		1px solid _brand(facebook);
+	}
+	.fa-facebook{
+		margin-left: 		4px;
+		&:hover{
+			color:			_brand(facebook);
+		}
+	}
+}
+
+a[href*="twitter"]{
+	&:hover{
+		color: 				_brand(twitter);
+		border-bottom: 		1px solid _brand(twitter);
+	}
+	.fa-twitter{
+		margin-left: 		4px;
+		&:hover{
+			color: 			_brand(twitter);
+		}
+	}
+}
+
+a[href*="github"]{
+	&:hover{
+		color: 				_brand(github);
+		border-bottom: 		1px solid _brand(github);
+	}
+	.fa-github{
+		margin-left: 		4px;
+		&:hover{
+			color: 			_brand(github);
+		}
+	}
+}
+
+a[href*="instagram"]{
+	&:hover{
+		color: 				_brand(instagram);
+		border-bottom: 		1px solid _brand(instagram);
+	}
+	.fa-instagram{
+		margin-left: 		4px;
+		&:hover{
+			color: 			_brand(instagram);
+		}
+	}
+}
+
+a[href*="linkedin"]{
+	&:hover{
+		color: 				_brand(linkedin);
+		border-bottom: 		1px solid _brand(linkedin);
+	}
+	.fa-linkedin-square,
+	.fa-linkedin{
+		margin-left: 		4px;
+		&:hover{
+			color: 			_brand(linkedin);
+		}
+	}
+}
+
+a[href*="youtube"]{
+	&:hover{
+		color: 				_brand(youtube);
+		border-bottom: 		1px solid _brand(youtube);
+	}
+	.fa-youtube-square,
+	.fa-youtube-square{
+		margin-left: 		4px;
+		&:hover{
+			color: 			_brand(youtube);
+		}
+	}
+}
+
+a[href*="plus.google"]{
+	&:hover{
+		color: 				_brand(googleplus);
+		border-bottom: 		1px solid _brand(googleplus);
+	}
+	.fa-youtube-square,
+	.fa-youtube-square{
+		margin-left: 		4px;
+		&:hover{
+			color: 			_brand(googleplus);
+		}
+	}
+}
+
+.tagcloud a{
+	border-bottom: none;
+}

@@ -1,0 +1,374 @@
+//'foo', 'bar', 'baz', 'qux', 'quux', 'corge', 'grault', 'garply', 'waldo', 'fred', 'plugh', 'xyzzy', 'thud', 'huhu', 'lala', 'keke', 'koko', 'kuku', 'fifi', 'bubu', 'wibble', 'wobble', 'wubble', 'flob', 'toto', 'titi', 'tata', 'tutu', 'truc', 'bidule', 'machin', 'azerty'
+
+// 1.Media Queries.
+$SW:										44.375em;
+$MW:										56.875em;
+$LW:										61.5625em;
+$WIDESCREEN:								75em;
+$HDW:										120em;
+$FOURKW:									240em;
+$FIVEKW:									320em;
+$EIGHTKW:									480em;
+$SH:										18.75em;
+$MH:										37.5em;
+$LS:										56.25em;
+$HDH:										67.5em;
+$FOURKH:									135em;
+$FIVEKH:									180em;
+$EIGHTKH:									270em;
+
+// 2.Sans-Serif.
+$sans-serif-base:							'Calibri Light','Helvetica Neue',Roboto,'Lucida Grande','Lucida Sans Unicode','Lucida Sans',Geneva,Arial,sans-serif;
+$apple:										-apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', 'sans-serif';
+$microsoft:									'Calibri', 'Candara', 'Segoe', 'Segoe UI', 'Optima', 'Arial', 'sans-serif';
+$google:									'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans';
+$candara:									'Candara', 'Calibri', 'Segoe', 'Segoe UI', 'Optima', 'Arial', 'sans-serif';
+$courier:									'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', 'monospace';
+$franklin:									'Franklin Gothic Medium', 'Arial', 'sans-serif';
+$futura:									'Futura', 'Trebuchet MS', 'Arial', 'sans-serif';
+$geneva:									'Geneva', 'Tahoma', 'Verdana', 'sans-serif';
+$gill-sans:									'Gill Sans', 'Gill Sans MT', 'Calibri', 'sans-serif';
+$helvetica:									'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+$lucida-grande:								'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Geneva', 'Verdana', 'sans-serif';
+$optima:									'Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', 'sans-serif';
+$segoe:										'Segoe', 'Segoe UI', 'Helvetica Neue', 'Arial', 'sans-serif';
+$tahoma:									'Tahoma', 'Geneva', 'Verdana', 'sans-serif';
+$trebuchet:									'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'Tahoma', 'sans-serif';
+$verdana:									'Verdana', 'Geneva', 'sans-serif';
+$ptsans:									'PT Sans', sans-serif;
+
+// 3.Serif.
+$serif-base:								TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+$antiqua:									'Book Antiqua', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Georgia', 'serif';
+$baskerville:								'Baskerville', 'Baskerville old face', 'Hoefler Text', 'Garamond', 'Times New Roman', 'serif';
+$bodoni:									'Bodoni MT', 'Didot', 'Didot LT STD', 'Hoefler Text', 'Garamond', 'Times New Roman', 'serif';
+$cambria:									'Cambria', 'Georgia', 'serif';
+$caslon:									'Big Caslon', 'Book Antiqua', 'Palatino Linotype', 'Georgia', 'serif';
+$constantia:								'Constantia', 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Georgia', 'serif';
+$didot:										'Didot', 'Didot LT STD', 'Hoefler Text', 'Garamond', 'Times New Roman', 'serif';
+$garamond:									'Garamond', 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', 'serif';
+$goudy:										'Goudy Old Style', 'Garamond', 'Big Caslon', 'Times New Roman', 'serif';
+$hoefler:									'Hoefler Text', 'Baskerville old face', 'Garamond', 'Times New Roman', 'serif';
+$lucida-bright:								'Lucida Bright', 'Georgia', 'serif';
+$merriweather:								'Merriweather', 'Georgia', 'serif';
+$palatino:									'Palatino', 'Palatino Linotype', 'Palatino LT STD', "Book Antiqua", 'Georgia', 'serif';
+$ptserif:									'PT Serif', serif;
+// 4.Vendor Prefixes.
+// @var {list}
+$vendor-prefixes: (
+											'-moz-',
+											'-webkit-',
+											'-ms-',
+											''
+);
+
+// 5.Properties that should be vendorized.
+// @var {list}
+$vendor-properties: (
+											'align-content',
+											'align-items',
+											'align-self',
+											'animation',
+											'animation-delay',
+											'animation-direction',
+											'animation-duration',
+											'animation-fill-mode',
+											'animation-iteration-count',
+											'animation-name',
+											'animation-play-state',
+											'animation-timing-function',
+											'appearance',
+											'backface-visibility',
+											'box-sizing',
+											'filter',
+											'flex',
+											'flex-basis',
+											'flex-direction',
+											'flex-flow',
+											'flex-grow',
+											'flex-shrink',
+											'flex-wrap',
+											'justify-content',
+											'order',
+											'perspective',
+											'pointer-events',
+											'transform',
+											'transform-origin',
+											'transform-style',
+											'transition',
+											'transition-delay',
+											'transition-duration',
+											'transition-property',
+											'transition-timing-function',
+											'user-select'
+);
+
+// 6.Values that should be vendorized.
+// @var {list}
+$vendor-values: (
+											'filter',
+											'flex',
+											'linear-gradient',
+											'radial-gradient',
+											'transform'
+);
+
+// 7.Markup Elements Colors.
+$tagColors:(
+	header:									#1498FC,
+	nav:									#11DAE3,
+	figure:									#7BDB45,
+	main:									#E8A432,
+	article:								#D45954,
+	section:								#FF41FF,
+	aside:									#FFFB02,
+	footer:									#8882F0
+);
+
+// 8.Duration.
+$duration: (
+	menu:									0.35s
+);
+
+// 9.Size.
+$size: (
+	border-radius:							2px
+);
+
+//10.Page Container
+
+$lost-center:								1000px;
+
+// 10.Brand Colors.
+$brand: (
+	twitter:								#55acee,
+	facebook:								#3b5998,
+	github:									#999999,
+	googleplus:								#dd4b39,
+	linkedin:								#0077b5,
+	pinterest:								#bd081c,
+	reddit:									#5f99cf,
+	instagram:								#e1306c,
+	youtube:								#bd081c
+);
+
+// 11.Palette.
+//See http://jackiebalzer.com/color to apply manipulation functions
+//See https://colorme.io/ for live manipulation
+//Black and White are function colors only. Avoid using in the $palette() function
+
+$palette:(
+	page-color:								#0A0C0E, //Page Background Color
+	primary-color-dark:						#9E9E9E, //Headings color
+	primary-color:							#607D8B, //Link Hover
+	primary-color-light:					#CFD8DC, //Table Header
+	primary-color-text:						#FFFFFF, //Button Labels
+	accent-color:							#607D8B, //Links, Button Background, Text Selection
+	primary-text-color:						#c0c0c0, //Body Color(Opposite of Page Color)
+	secondary-text-color:					#757575, //Contrasting Text Color
+	divider-color:							#BDBDBD, //Bridge Color
+	
+	activetheme: (	
+		color-a:							rgba(026, 026, 026, 1.00),	//Background Color
+		color-z:							rgba(255, 255, 255, 1.00),	//Page Background Color
+		color1:								rgba(000, 122, 204, 1.00),	//Link Color
+		color2:								rgba(026, 026, 026, 1.00),	//Main Text Color
+		color3:								rgba(104, 104, 104, 1.00),	//Secondary Text Color
+		color4:								rgba(255, 050, 011, 1.00)	//Border Color
+	),//twentysixteen
+
+	carlsbad: (	
+		color-a:							rgba(255, 255, 255, 1.00),	//Page Color
+		color-z:							rgba(039, 040, 034, 1.00),	//Page Background Color
+		color2:								rgba(248, 186, 082, 1.00),	//Link Color
+		color1:								rgba(030, 073, 105, 1.00),	//Main Text Color
+		color3:								rgba(185, 174, 172, 1.00),	//Secondary Text Color
+		color4:								rgba(117, 156, 051, 1.00)	//Border Color
+	),//carlsbad
+
+	monokai: (
+		color-a:							rgba(039, 040, 034, 1.00),	//Background Color
+		color-z:							rgba(255, 255, 255, 1.00),	//Page Background Color
+		color1: 							rgba(166, 226, 046, 1.00),	//Link Color
+		color2: 							rgba(246, 043, 072, 1.00),	//Secondary Text Color
+		color3: 							rgba(253, 151, 031, 1.00),	//Main Text Color
+		color4: 							rgba(039, 040, 034, 1.00)	//Border Color
+	),//monokai
+
+	delta: (
+		color-z:							rgba(039, 040, 034, 1.00),	//Page Font Color
+		color-a:							rgba(255, 255, 255, 1.00),	//Page Background Color
+		color1: 							rgba(000, 038, 038, 1.00),	//Header Color
+		color2: 							rgba(229, 088, 018, 1.00),	//Link Color
+		color3: 							rgba(149, 198, 035, 1.00),	//Bridge Color
+		color4: 							rgba(014, 071, 073, 1.00),	//Icon Color
+		color5: 							rgba(239, 231, 218, 1.00),
+	),//delta
+
+	athena:(
+		color-z:							rgba(039, 040, 034, 1.00),	//Page Font Color
+		color-a:							rgba(253, 250, 249, 1.00),	//Page Background Color
+		color1: 							rgba(045, 060, 064, 1.00),	//Header Color
+		color2: 							rgba(250, 110, 000, 1.00),	//Link Color
+		color2.1: 							#ee1a3e,//about
+		color2.2: 							#754db4,//services
+		color2.3: 							#4579C4,//testimonials
+		color2.4: 							#c45353,//blog
+		color2.5: 							#7b920a,//contact us
+		color2.6: 							#02b9bf,//
+		color3: 							rgba(077, 109, 137, 1.00),	//Bridge Color
+		color4: 							rgba(124, 124, 124, 1.00),	//Icon Color
+		color5: 							rgba(239, 200, 139, 1.00),
+
+	),//athena
+
+
+	allhallowseve: (
+		page-color:							#000000, //Page Background Color
+		primary-color-dark:					#AB2303, //Headings
+		primary-color:						#AB2303, //Link Hover
+		primary-color-light:				#CFD8DC, //Table Header
+		primary-color-text:					#FFFFFF, //Button Labels
+		accent-color:						#98298E, //Links, Button Background, Text Selection,
+		primary-text-color:					#c0c0c0, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#292900, //Bridge Color
+	),//allhallowseve
+	
+	solarized-d: (
+		page-color:							#022029, //Page Background Color
+		primary-color-dark:					#6B8B00, //Headings
+		primary-color:						#795548, //Link Hover
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#1689D4, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#E7E7E7, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#088C86  //Bridge Color
+	),//solarized-d
+
+	solarized-l: (
+		page-color:							#FDF6E2, //Page Background Color
+		primary-color-dark:					#D44E01, //Headings
+		primary-color:						#795548, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#8E9A2C, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#576E75, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#088C86  //Bridge Color
+	),//solarized-l
+
+	zenburnesque: (
+		page-color:							#404040, //Page Background Color
+		primary-color-dark:					#279FFA, //Headings
+		primary-color:						#795548, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#F9D766, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#E7E7E7, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#64906F  //Bridge Color
+	),//zenburnesque
+
+	twilight: (
+		page-color:							#141414, //Page Background Color
+		primary-color-dark:					#5E819E, //Headings
+		primary-color:						#795548, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#C85828, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#E7E7E7, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#82905E  //Bridge Color
+	),//twilight
+
+	pastelsondark: (
+		page-color:							#211E1E, //Page Background Color
+		primary-color-dark:					#A19FF4, //Headings
+		primary-color:						#795548, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#97B83E, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#E7E7E7, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#82905E  //Bridge Color
+	),//pastelsondark
+
+	lazy: (
+		page-color:							#FFFFFF, //Page Background Color
+		primary-color-dark:					#902F25, //Headings
+		primary-color:						#795548, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#3A63B5, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#23282d, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#6D8920  //Bridge Color
+	),//lazy
+
+	espressolibre: (
+		page-color:							#2A211C, //Page Background Color
+		primary-color-dark:					#C8666A, //Headings Color
+		primary-color:						#795548, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#00A500, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#BEAF98, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#6D8920  //Bridge Color, HR...
+	),//espressolibre
+
+	cobalt: (
+		page-color:							#002141, //Page Background Color
+		primary-color-dark:					#FDC409, //Headings Color
+		primary-color:						#795548, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#00A500, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#CCCCCC, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#6D8920  //Bridge Color, HR...
+	),//cobalt
+
+	polarnight: (
+		page-color:							#FFFFFF, //Page Background Color
+		primary-color-dark:					#000000, //Headings Color
+		primary-color:						#3B4252, //...
+		primary-color-light:				#D7CCC8, //Table Header
+		primary-color-text:					#212121, //Button Labels
+		accent-color:						#E65F5C, //Links, Button Background, Text Selection, Page Length Indicator
+		primary-text-color:					#3B4252, //Body Color(Opposite of Page Color)
+		secondary-text-color:				#757575, //Contrasting Text Color
+		divider-color:						#9BB291  //Bridge Color, HR...
+	),//polarnight
+);
+
+$palette-utility:(
+	error:									rgba(230, 57, 70, 1),
+	success:								rgba(43, 170, 43, 1),
+	information:							#48BDE2
+);
+
+// 12.Font.
+$font: (
+	family:									($apple, $microsoft, $google),
+	family-fixed:							('Menlo Regular','Courier New',monospace),
+	family-alt:								($apple, $microsoft, $google),
+	family-client:							($apple),
+	letter-spacing:							0.01em,
+	letter-spacing-alt:						0.5em,
+	header-text-transform:					uppercase,
+	weight-light:							100,
+	weight:									400,
+	weight-bold:							600,
+	weight-extrabold:						700,
+	weight-extrasuper:						900,
+	kerning:								0.01em,
+	kerning-alt:							0.1em
+);
+
+// 13. Misc
+$misc: (
+	z-index-base							:10000
+);

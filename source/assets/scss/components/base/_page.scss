@@ -1,0 +1,100 @@
+*, *::after, *::before {
+	box-sizing:						border-box;
+}
+
+// MSIE: Required for IEMobile.
+@-ms-viewport {
+	width:							device-width;
+}
+
+// MSIE: Prevents scrollbar from overlapping content.
+body {
+	-ms-overflow-style:				scrollbar;
+	-webkit-overflow-scrolling:		touch;
+	transition: 					all .3s ease-in;
+	@include font-smoothing;
+	&.is-loading {
+		*, *:before, *:after {
+			animation:				none !important;
+			transition: 			none !important;
+		}
+	}
+}
+body.is-loading {
+	.hero{
+		&::after {
+			opacity: 				1;
+		}
+		h1,p,a {
+				transform:			scale(0.95);
+				opacity: 			0;
+
+				&:before, &:after {
+					width: 			0;
+				}
+			}
+	}
+}
+
+html {
+	background-color: 				_palette(activetheme,color-a);
+	font-size: 90%;
+	@include MQ(MW) {
+		font-size: 					95%;
+	}
+	@include MQ(LW) {
+		font-size: 					100%;
+	}
+}
+body{
+	background-color: 				_palette(activetheme,color-a);
+	margin:							0;
+	padding:						0;
+}
+
+.site{
+	padding-top: 4px;
+	padding-bottom: 6px;
+}
+
+.site-header,
+.site-content,
+.site-footer{
+	background-color:_palette(activetheme,color-z);
+}
+
+img{
+	max-width: 						100%;
+	height: 						100%;//WONK
+	height: 						auto;
+}
+video{
+	width: 							100%;
+}
+
+.hidden{
+	display:						none;
+}
+
+body:not(.custom-background-image)::before,
+body:not(.custom-background-image)::after{
+	height: 						0;
+
+}
+
+
+.centered{
+	text-align: 					center;
+}
+
+.not-on-phone{
+	display: 						none;
+	@include MQ(MW){
+		display:					block;
+	}
+}
+::selection,
+::-moz-selection {
+	background-color: 				transparentize(_palette(activetheme,color2),0.6);
+	color: 							_palette(activetheme,color-z);
+}

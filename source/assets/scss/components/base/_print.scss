@@ -1,0 +1,61 @@
+/* print styles go here */
+@media print {
+  body {
+	font-size: 24px;
+	margin: 0;
+  }
+
+  section {
+	/* Absolute units are great for print stylesheets */
+	margin-bottom: 2cm;
+
+	/* Section always get their own page */
+	page-break-before: always;
+  }
+
+  /* avoid splitting of ul elements */
+  ul {
+	page-break-inside: avoid;
+  }
+
+  /* Print at least 2 lines on the current page and 4 lines on the next page */
+  p {
+	widows: 4;
+	orphans: 2;
+  }
+
+  /* Display targets of links */
+  a[href^="http"]:not([href*="codepen.io"]):after {
+	  content: " (" attr(href) ")";
+  }
+
+  /* Display expansions of abbreviations */
+  abbr[title]:after {
+	content: " (" attr(title) ")";
+  }
+
+  /* Don't display maps,...*/
+  .map iframe {
+	display: none;
+  }
+
+  /* ...show a static map instead */
+  .map {
+	width: 400px;
+	height: 300px;
+	background-image: url('http://maps.googleapis.com/maps/api/staticmap?center=Wien+Floridsdorf&zoom=13&scale=false&size=400x300&maptype=roadmap&format=png&visual_refresh=true');
+	print-color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+  }
+
+  /* page specific styles */
+  @page {
+	margin: 2cm;
+  }
+}
+
+@media (min-width: 48em) {
+  body {
+	max-width: 48em;
+  }
+}

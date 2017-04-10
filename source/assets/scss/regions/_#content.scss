@@ -1,0 +1,44 @@
+@lost gutter 21px;
+
+#content{
+	padding: $lost-gutter;
+	lost-center:1280px;
+	margin-bottom: $lost-gutter;
+}
+
+.site-content{
+	padding: 0;
+	article{
+		header, 
+		.post-thumbnail,
+		.entry-content{
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+.content-area,
+.sidebar{
+	lost-column:1/1;
+}
+
+
+@include MQ(MW) {
+	.content-area{
+		lost-column:7/10;
+	}
+	.sidebar{
+		lost-column:3/10;
+		margin-left: 0;
+	}
+}
+@include MQ(LW) {
+	.content-area{
+		lost-column:2/3;
+	}
+	.sidebar{
+		lost-column:1/3;
+		margin-left: 0;
+	}
+}

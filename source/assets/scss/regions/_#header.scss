@@ -1,0 +1,20 @@
+@lost gutter 21px;
+
+.site-header{
+	padding: 0 $lost-gutter;
+	lost-center:1280px;
+	margin-bottom: $lost-gutter;
+}
+
+.site-branding,
+.site-header-menu,
+.menu-toggle{
+	margin-top: $lost-gutter;
+	margin-bottom: $lost-gutter;
+}
+
+@include MQ(MW) {
+	.site-description {
+		display: block;
+	}
+}
